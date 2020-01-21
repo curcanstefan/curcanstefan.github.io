@@ -1,16 +1,113 @@
-<html>
-  <head>
+<!--      Unele lucruri pot părea banale după ce le știm, dar pot fi neintuitive si e mai bine sa le stim decât să le presupunem.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
     <title>Apartament Vasile Lupu</title>
-  </head>
-  <body>
-    <h1>Apartament Vasile Lupu</h1>
-    <p>
-      Manual de instructiuni pentru apartament. Aici ar trebui sa regasim toate informatiile necesare activitatilor de zi cu zi in locuinta.
-      Unele lucruri pot părea banale după ce le știm, dar pot fi neintuitive si e mai bine sa le stim decât să le presupunem.
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="container">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link p-3 text-muted" data-toggle="tab" href="#home" role="tab">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active p-3 text-muted" data-toggle="tab" href="#general" role="tab">General</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link p-3 text-muted" data-toggle="tab" href="#componenta" role="tab">Componenta</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link p-3 text-muted" data-toggle="tab" href="#zgomot" role="tab">Zgomot</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link p-3 text-muted" data-toggle="tab" href="#climatizare" role="tab">Climatizare</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link p-3 text-muted" data-toggle="tab" href="#apa" role="tab">Apa</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link p-3 text-muted" data-toggle="tab" href="#curent" role="tab">Curent</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link p-3 text-muted" data-toggle="tab" href="#internet" role="tab">Internet</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link p-3 text-muted" data-toggle="tab" href="#cablu-tv" role="tab">Cablu TV</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link p-3 text-muted" data-toggle="tab" href="#contact" role="tab">Contact</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div include-html="home.html" class="row tab-pane fade" id="home" role="tabpanel"></div>
+        <div include-html="general.html" class="row tab-pane fade show active" id="general" role="tabpanel"></div>
+        <div include-html="componenta.html" class="row tab-pane fade" id="componenta" role="tabpanel"></div>
+        <div include-html="zgomot.html" class="row tab-pane fade" id="zgomot" role="tabpanel"></div>
+        <div include-html="climatizare.html" class="row tab-pane fade" id="climatizare" role="tabpanel"></div>
+        <div include-html="apa.html" class="row tab-pane fade" id="apa" role="tabpanel"></div>
+        <div include-html="curent.html" class="row tab-pane fade" id="curent" role="tabpanel"></div>
+        <div include-html="internet.html" class="row tab-pane fade" id="internet" role="tabpanel"></div>
+        <div include-html="cablu-tv.html" class="row tab-pane fade" id="cablu-tv" role="tabpanel"></div>
+        <div include-html="contact.html" class="row tab-pane fade" id="contact" role="tabpanel"></div>
+    </div>
+</div>
+
+<footer class="blog-footer">
+    <p class="float-right">
+        <a href="#">Back to top</a>
     </p>
-  </body>
-  <footer>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </footer>
+    <p>O lista sumara de instructiuni si indicatii scrisa de <a href="mailto:curcanstefan@gmail.com">Stefan
+        Curcan</a>.
+    </p>
+</footer>
+</body>
+<footer>
+    <script type="application/javascript">
+        function includeHTML() {
+            let z, i, el, file, xhttp;
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                el = z[i];
+                file = el.getAttribute("include-html");
+                if (file) {
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState === 4) {
+                            if (this.status === 200) {
+                                el.innerHTML = this.responseText;
+                            }
+                            if (this.status === 404) {
+                                el.innerHTML = "Page not found.";
+                            }
+                            el.removeAttribute("include-html");
+                            includeHTML();
+                        }
+                    };
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    return;
+                }
+            }
+        }
+
+        includeHTML();
+    </script>
+</footer>
 </html>
